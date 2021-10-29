@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>JavaScript Shaking Screen</title>
+<script LANGUAGE="Javascript">
+<!-- Begin
+
+function shake(n)
+{
+for (i = 10; i > 0; i--)
+{
+for (j = n; j > 0; j--)
+{
+self.moveBy(0,i);
+self.moveBy(i,0);
+self.moveBy(0,-i);
+self.moveBy(-i,0);
+} //end inner loop
+}// end outer loop
+} //end function
+// End -->
+</script>
+</head>
+
+<body BGCOLOR="#CDCDCD" TEXT="#23238E" LINK="#FF2400" VLINK="#FF2400" ALINK="#E6E8FA" >
+
+<h2>This only works with IE 4 or above or Netscape 4 or above
+<br>Make the window less than full screen. </h2>
+<p> <form>
+<input type=button onClick="shake(2)" value="Shake Screen" name="button">
+</form>
+</p>
+<script type="text/JavaScript">
+setTimeout("shake(15)",5000);
+</script>
+
+</body>
+</html>
